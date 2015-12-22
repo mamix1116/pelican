@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Mami" />
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="article, Django Girls" />
+
+    <meta property="og:title" content="Django Girls ワークショップはこうしてできた。"/>
+    <meta property="og:url" content="./Django-Girls-Koushite-dekita.html"/>
+    <meta property="og:site_name" content="Mami Blog"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="./img/pic01_cover.jpg" />
+    <meta property="og:description" content="Django Girlsのワークショップができるまでの話。準備したこととか。" />
+
+    <link rel="canonical" href="./Django-Girls-Koushite-dekita.html" />
+
+    <title>Django Girls ワークショップはこうしてできた。 | Mami Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/paginator.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/social-likes_flat.css" />
+
+    <script type="text/javascript" src="/theme/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/theme/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/theme/js/social-likes.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="./theme/css/tree.css" />
+    <link rel="stylesheet" type="text/css" href="./theme/css/anchorific.css" />
+    <script type="text/javascript" src="./theme/js/anchorific.js"></script>
+</head>
+<body id="index">
+<div class="header">  
+    <div class="container">
+        <div class="logo">
+            <a href="./">
+                MAMI BLOG            </a>
+        </div>
+
+        <div class="top-menu">
+
+            <div class="search">
+            </div>
+
+            <span class="menu"> </span>
+                <ul>
+                            <li class="active"><a href="./category/djangogirls.html">DJANGOGIRLS</a></li>
+                            <li ><a href="./category/python.html">PYTHON</a></li>
+
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <script>
+                $("span.menu").click(function(){
+                    $(".top-menu ul").slideToggle("slow" , function(){
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+    <div class="content">
+        <div class="container">
+                <div class="content-grids">
+<div class="single-main">
+
+    <div class="col-md-9 single-grid">
+
+        <header>
+<h4>
+    <a href="./Django-Girls-Koushite-dekita.html" title="Django Girls ワークショップはこうしてできた。">Django Girls ワークショップはこうしてできた。</a>
+    12 20, 2015
+</h4>
+
+<div class="footer art-info">
+
+        Author: <a class="url fn" href="./author/mami.html">Mami</a> |
+
+    Category: <a href="./category/djangogirls.html">DjangoGirls</a>
+
+
+
+    
+
+        <br />
+        Tags:         <a href="./tag/django-girls.html">Django Girls</a>
+
+</div><div class="social-likes">
+    <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+    <div class="twitter"  title="Поделиться ссылкой в Твиттере">Twitter</div>
+    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+    <div class="plusone" title="Поделиться ссылкой в Google+">Google+</div>
+</div>        </header>
+
+        <article class="content">
+
+
+            <h3></h3>
+<p>これは<a href="http://www.adventar.org/calendars/875">Geek Women Advent Calendar</a> 20日目の記事です。<br />
+（すみません。おくれました。）</p>
+<h2>Django Girls って？</h2>
+<p>女性にもっとプログラミングを楽しんでほしい。という想いで初心者向けの1Dyaワークショップを開催しています。
+ワークショップでは、小さいグループをつくり、プログラマとして活躍するコーチやメンターに教えてもらいながら、プログラミングの基礎を学んでいきます。HTML、CSS、Python、そしてDjangoを学んで、はじめてのWebアプリケーションを一緒に作ります。このワークショップは、2014年にベルリンで開催以来、世界各都市で開催されています。
+Django Girls Japanは、そのワークショップを中心とした国内のコミュニティーです。</p>
+<p>その日本初のDjango Girlsワークショップがどうやってできたのか、書いておきたいと思います。</p>
+<p><img alt="Django Girls ワークショップ" src="./img/pic04_s.JPG" /></p>
+<h2>やることになった経緯</h2>
+<p>私は、都市計画やGIS（Geographic Information Science/System）をやっていて、
+エンジニアじゃないけど、ちょいちょいプログラミングを一人でかじってみてた。</p>
+<p>2014年頃。GISやるならPythonでしょ、って流れに乗っかって、Pythonをかじりはじめる。</p>
+<p>2015年4月。Python勉強したら、GIS以外でも使えるんでしょ？フレームワーク？Django？なにそれ？
+チュートリアルとかないんかなー？日本語で私にも分かるようなの、あんまりないなー。
+英語で、いいかんじの発見！</p>
+<p>ん、このチュートリアルを使ってワークショップやってるみたいだぞ。
+たのしそー！！日本でもやりたーい！！</p>
+<p>という流れでした。</p>
+<h2>仲間集め</h2>
+<p>Django Girlsが実現できたのは、なんといってもホントにいろんな人の協力のおかげです。</p>
+<p>やりたーい！！ッて言ってみたら、いいね！って言ってくれる人たちがいて、
+いろんな人が集まってくれました。いろんな人を紹介してもらいました。</p>
+<p>"だ、大丈夫？！"と、いろんな方が心配してくれて、手を貸してくれました。</p>
+<p>こうして、運営メンバーと、ワークショップ当日のコーチ＆メンターはじめ、
+たくさんの仲間や協力者と出会うことができました。皆さんには感謝しかないです。</p>
+<p>やりたいことは、とりあえずやりたいって言ってみること大事だと思いました。
+それに賛同してくれる人がいたら、その声を聞きながらできることやっていく。
+すると、独りよがりな「やりたい」にはならなくて、最初は私の「やりたい」だけだったけど、みんなで共有する目標になっていく。</p>
+<p>それと、Pythonコミュニティーのすごい。
+おそらくPythonに限らないことだろうけど、コミュニティーの結束や協力がすごい。
+（いつも日程が合わなくて、Pythonの勉強会とかに行けてないのがつらい。行きたい、行きたい。）</p>
+<h2>チュートリアルを翻訳</h2>
+<p>まず、チュートリアルを翻訳しました。
+翻訳できた！と思ったら、翻訳元がアップデートされ後戻りするとか、慣れない作業に苦戦。
+翻訳作業のツールやコツがあるみたいで、次回はそれを導入してもっと効率的にやろう。</p>
+<p>翻訳は複数人で作業して、Githubをつかって管理してました。
+個人的には、Githubのいい練習になった。
+みんなでGithubやる時のお作法みたいなのが、ちょっと分かってきた。</p>
+<p>翻訳作業は、waffle.ioを使って、Githubのイシューに紐付けてチャプターごとにタスク管理。
+Trello風だし、誰が何をしているか、何が終わったか、一目瞭然。わかりやすかった。
+翻訳したいチャプターを自分で選んで、作業すると宣言。終わったら報告して、また次のチャプターをえらぶ。
+自己申告制だから、みんな無理ない範囲でそれぞれのペースで協力できるのもよかったかな。</p>
+<h2>イベント準備</h2>
+<p>まずは、会場と日程調整。
+快く会場提供を申し出てくれた方々に恵まれ、本当に助かりました。
+本当にありがとうございました。</p>
+<p>会場のデコレーションはしたい！風船かざりたい！ワクワクする会場作り。</p>
+<h2>スポンサー集め＆告知</h2>
+<p>一般社団法人PyConさんの力を借りて、
+ConnpassでPaypal決済でスポンサー集めをしました。
+個人の方でスポンサーしてくださる方もいて、びっくりしました。
+応援してくれる方がいるんだなって、すごく嬉しかった。</p>
+<p>告知もPyLadiesさんの協力を得てConnpassで実施。
+けっこうすぐ埋まりました。需要あってよかった。ホッとした瞬間。</p>
+<h2>ワークショップ当日</h2>
+<p>参加者は30名。コーチ＆メンターが13名。２～３人に1名のサポートがついて、チュートリアルにそって手を動かしながら、プログラミングを学んでみる。
+海外出身者や、関西など地方からも参加してくれました。20～30代が多かったけど、40代、50代の方も。IT業界の方も、そうでない方も。</p>
+<p>事前アンケートで確認しておいたプログラミングの経験レベルと、OS（Windows/Mac）から、あらかじめグループを作っておいて、
+できるだけ同じOSを使っているコーチをあてるようにしました。</p>
+<p>ランチは、ヘルシー思考の女の子やベジタリアンの子にも楽しんで欲しくて、マクロビのランチをオーダー。
+おいしくて、ボリュームもしっかりあるから、参加者だけでなくコーチ男性陣にも満足してもらえたようです。</p>
+<p>スイーツタイムもありました。休憩だけでなく、参加者同士がコミュニケーションをとる時間として、お菓子やお茶はやっぱり効果的です。
+「これ（お茶）、どうぞ～」「美味しいですね～」なんて自然な会話が、声をかけるきっかけになります。
+女性がスイーツタイムに求めるのは、お菓子そのものというより、自然なコミュニケーションなんだと思う。
+出会いや会話も、ワークショップに参加する醍醐味。</p>
+<h2>ワークショップ後</h2>
+<p>スポンサーやコーチ＆メンターなど、お世話になった方に、翌日お礼メールとともにレポートを送付した。</p>
+<p>素早くレポートをおこせるよう、当日のアンケート集計結果と、写真、最終的な決算を書き込めばいいように、事前に作っておいた。
+事前にレポートの枠を作っておくと、絶対に撮り忘れたらいけない写真もわかる。忘れないうちに。</p>
+<h2>今後について</h2>
+<p>ワークショップはそれなりに労力もかかるので、頻繁にというわけにはいかないのが、現在の実状。
+その中でも、無理ない範囲で継続的にコミュニティーとして活動をする必要があると思っている
+１～2ヶ月に1度、Meetupや小さな勉強会は開いている。
+その中で、女性やなにかしらマイノリティの立場に置かれている人たちが、参加しやすいイベントのあり方を
+毎回トライアンドエラーで試しているところです。</p>
+<p>そして、<strong>2016年は春すぎくらいに、第2回目のDjango Girlsワークショップ開催を目指しています。</strong>
+（興味ある方は、<a href="http://djangogirls-org.connpass.com/">こちら</a>をチェックしておいてくださいね。）</p>
+
+        </article>
+
+    </div>
+    <div class="col-md-3 content-right">
+        <div class='anchorific'></div>
+    </div>
+</div>
+                </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.</p>
+            <p><a href="http://github.com/samael500/w3-personal-blog/">W3 Personal Blog</a> is a flat <a href="http://getbootstrap.com/">bootstrap</a> responsive theme designed by <a href="https://w3layouts.com/personal-blog-a-blogging-category-flat-bootstrap-responsive-web-template/">W3layouts</a> ported to a pelican by <a href="http://samael500.github.io/">Samael500</a>.<p>
+            <p>Copyrights © 2015 Mami Blog All rights reserved.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
