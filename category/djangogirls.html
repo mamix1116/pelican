@@ -1,156 +1,144 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+        <meta charset="utf-8" />
+        <title>Mami Blog - DjangoGirls</title>
+        <link rel="stylesheet" href="../theme/css/main.css" />
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Mami" />
-    <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="" />
-
-    <meta property="og:title" content="Mami Blog - DjangoGirls"/>
-    <meta property="og:url" content="http://mamix1116.github.io/pelican/category/djangogirls.html"/>
-    <meta property="og:site_name" content="Mami Blog"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
-
-    <link rel="canonical" href="http://mamix1116.github.io/pelican/category/djangogirls.html" />
-
-    <title>Mami Blog - DjangoGirls</title>
-
-    <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/theme/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/theme/css/pygment.css" />
-    <link rel="stylesheet" type="text/css" href="/theme/css/paginator.css" />
-    <link rel="stylesheet" type="text/css" href="/theme/css/social-likes_flat.css" />
-
-    <script type="text/javascript" src="/theme/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/theme/js/social-likes.min.js"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="http://mamix1116.github.io/pelican/theme/css/tree.css" />
-    <script type="text/javascript" src="http://mamix1116.github.io/pelican/theme/js/tree.js"></script>
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
-<body id="index">
-<div class="header">  
-    <div class="container">
-        <div class="logo">
-            <a href="http://mamix1116.github.io/pelican/">
-                MAMI BLOG            </a>
-        </div>
 
-        <div class="top-menu">
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">Mami Blog </a></h1>
+                <nav><ul>
+                    <li><a href="../category/code.html">Code</a></li>
+                    <li class="active"><a href="../category/djangogirls.html">DjangoGirls</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
 
-            <div class="search">
-            </div>
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="../Django-Girls-Koushite-dekita.html">Django Girls ワークショップはこうしてできた。</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-12-20T12:00:00+09:00">
+                Published: 日 20 12月 2015
+        </abbr>
 
-            <span class="menu"> </span>
-                <ul>
-                            <li ><a href="http://mamix1116.github.io/pelican/category/code.html">CODE</a></li>
-                            <li class="active"><a href="http://mamix1116.github.io/pelican/category/djangogirls.html">DJANGOGIRLS</a></li>
-
-                    <div class="clearfix"></div>
-                </ul>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <script>
-                $("span.menu").click(function(){
-                    $(".top-menu ul").slideToggle("slow" , function(){
-                    });
-                });
-            </script>
-        </div>
-    </div>
-</div>
-    <div class="content">
-        <div class="container">
-                <div class="content-grids">
-                        <div class="col-md-8 content-main">
-
-<div class="archives-list">
-
-    <h2>Articles in category "DjangoGirls"</h2>
-
-    <ul id="tree" class="tree">
-        <li>DjangoGirls<ul>
-        <li>2015
-            <ul>
-                    <li>12月
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/mami.html">Mami</a>
+        </address>
+<p>In <a href="../category/djangogirls.html">DjangoGirls</a>.</p>
+<p>tags: <a href="../tag/django-girls.html">Django Girls</a> </p>
+</footer><!-- /.post-info --><h3></h3>
+<p>これは<a href="http://www.adventar.org/calendars/875">Geek Women Advent Calendar</a> 20日目の記事です。<br />
+（すみません。おくれました。）</p>
+<h2>Django Girls って？</h2>
+<p>女性にもっとプログラミングを楽しんでほしい。という想いで初心者向けの1Dyaワークショップを開催しています。
+ワークショップでは、小さいグループをつくり、プログラマとして活躍するコーチやメンターに教えてもらいながら、プログラミングの基礎を学んでいきます。HTML、CSS、Python、そしてDjangoを学んで、はじめてのWebアプリケーションを一緒に作ります。このワークショップは、2014年にベルリンで開催以来、世界各都市で開催されています。
+Django Girls Japanは、そのワークショップを中心とした国内のコミュニティーです。</p>
+<p>その日本初のDjango Girlsワークショップがどうやってできたのか、書いておきたいと思います。</p>
+<p><img alt="Django Girls ワークショップ" src="../img/pic04_s.JPG" /></p>
+<h2>やることになった経緯</h2>
+<p>私は、都市計画やGIS（Geographic Information Science/System）をやっていて、
+エンジニアじゃないけど、ちょいちょいプログラミングを一人でかじってみてた。</p>
+<p>2014年頃。GISやるならPythonでしょ、って流れに乗っかって、Pythonをかじりはじめる。</p>
+<p>2015年4月。Python勉強したら、GIS以外でも使えるんでしょ？フレームワーク？Django？なにそれ？
+チュートリアルとかないんかなー？日本語で私にも分かるようなの、あんまりないなー。
+英語で、いいかんじの発見！</p>
+<p>ん、このチュートリアルを使ってワークショップやってるみたいだぞ。
+たのしそー！！日本でもやりたーい！！</p>
+<p>という流れでした。</p>
+<h2>仲間集め</h2>
+<p>Django Girlsが実現できたのは、なんといってもホントにいろんな人の協力のおかげです。</p>
+<p>やりたーい！！ッて言ってみたら、いいね！って言ってくれる人たちがいて、
+いろんな人が集まってくれました。いろんな人を紹介してもらいました。</p>
+<p>"だ、大丈夫？！"と、いろんな方が心配してくれて、手を貸してくれました。</p>
+<p>こうして、運営メンバーと、ワークショップ当日のコーチ＆メンターはじめ、
+たくさんの仲間や協力者と出会うことができました。皆さんには感謝しかないです。</p>
+<p>やりたいことは、とりあえずやりたいって言ってみること大事だと思いました。
+それに賛同してくれる人がいたら、その声を聞きながらできることやっていく。
+すると、独りよがりな「やりたい」にはならなくて、最初は私の「やりたい」だけだったけど、みんなで共有する目標になっていく。</p>
+<p>それと、Pythonコミュニティーのすごい。
+おそらくPythonに限らないことだろうけど、コミュニティーの結束や協力がすごい。
+（いつも日程が合わなくて、Pythonの勉強会とかに行けてないのがつらい。行きたい、行きたい。）</p>
+<h2>チュートリアルを翻訳</h2>
+<p>まず、チュートリアルを翻訳しました。
+翻訳できた！と思ったら、翻訳元がアップデートされ後戻りするとか、慣れない作業に苦戦。
+翻訳作業のツールやコツがあるみたいで、次回はそれを導入してもっと効率的にやろう。</p>
+<p>翻訳は複数人で作業して、Githubをつかって管理してました。
+個人的には、Githubのいい練習になった。
+みんなでGithubやる時のお作法みたいなのが、ちょっと分かってきた。</p>
+<p>翻訳作業は、waffle.ioを使って、Githubのイシューに紐付けてチャプターごとにタスク管理。
+Trello風だし、誰が何をしているか、何が終わったか、一目瞭然。わかりやすかった。
+翻訳したいチャプターを自分で選んで、作業すると宣言。終わったら報告して、また次のチャプターをえらぶ。
+自己申告制だから、みんな無理ない範囲でそれぞれのペースで協力できるのもよかったかな。</p>
+<h2>イベント準備</h2>
+<p>まずは、会場と日程調整。
+快く会場提供を申し出てくれた方々に恵まれ、本当に助かりました。
+本当にありがとうございました。</p>
+<p>会場のデコレーションはしたい！風船かざりたい！ワクワクする会場作り。</p>
+<h2>スポンサー集め＆告知</h2>
+<p>一般社団法人PyConさんの力を借りて、
+ConnpassでPaypal決済でスポンサー集めをしました。
+個人の方でスポンサーしてくださる方もいて、びっくりしました。
+応援してくれる方がいるんだなって、すごく嬉しかった。</p>
+<p>告知もPyLadiesさんの協力を得てConnpassで実施。
+けっこうすぐ埋まりました。需要あってよかった。ホッとした瞬間。</p>
+<h2>ワークショップ当日</h2>
+<p>参加者は30名。コーチ＆メンターが13名。２～３人に1名のサポートがついて、チュートリアルにそって手を動かしながら、プログラミングを学んでみる。
+海外出身者や、関西など地方からも参加してくれました。20～30代が多かったけど、40代、50代の方も。IT業界の方も、そうでない方も。</p>
+<p>事前アンケートで確認しておいたプログラミングの経験レベルと、OS（Windows/Mac）から、あらかじめグループを作っておいて、
+できるだけ同じOSを使っているコーチをあてるようにしました。</p>
+<p>ランチは、ヘルシー思考の女の子やベジタリアンの子にも楽しんで欲しくて、マクロビのランチをオーダー。
+おいしくて、ボリュームもしっかりあるから、参加者だけでなくコーチ男性陣にも満足してもらえたようです。</p>
+<p>スイーツタイムもありました。休憩だけでなく、参加者同士がコミュニケーションをとる時間として、お菓子やお茶はやっぱり効果的です。
+「これ（お茶）、どうぞ～」「美味しいですね～」なんて自然な会話が、声をかけるきっかけになります。
+女性がスイーツタイムに求めるのは、お菓子そのものというより、自然なコミュニケーションなんだと思う。
+出会いや会話も、ワークショップに参加する醍醐味。</p>
+<h2>ワークショップ後</h2>
+<p>スポンサーやコーチ＆メンターなど、お世話になった方に、翌日お礼メールとともにレポートを送付した。</p>
+<p>素早くレポートをおこせるよう、当日のアンケート集計結果と、写真、最終的な決算を書き込めばいいように、事前に作っておいた。
+事前にレポートの枠を作っておくと、絶対に撮り忘れたらいけない写真もわかる。忘れないうちに。</p>
+<h2>今後について</h2>
+<p>ワークショップはそれなりに労力もかかるので、頻繁にというわけにはいかないのが、現在の実状。
+その中でも、無理ない範囲で継続的にコミュニティーとして活動をする必要があると思っている
+１～2ヶ月に1度、Meetupや小さな勉強会は開いている。
+その中で、女性やなにかしらマイノリティの立場に置かれている人たちが、参加しやすいイベントのあり方を
+毎回トライアンドエラーで試しているところです。</p>
+<p>そして、<strong>2016年は春すぎくらいに、第2回目のDjango Girlsワークショップ開催を目指しています。</strong>
+（興味ある方は、<a href="http://djangogirls-org.connpass.com/">こちら</a>をチェックしておいてくださいね。）</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
                         <ul>
-                                <li>20
-                                    <ul>
-                                            <li><a href="http://mamix1116.github.io/pelican/Django-Girls-Koushite-dekita.html">Django Girls ワークショップはこうしてできた。</a></li>
-                                    </ul>
-                                </li>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
                         </ul>
-                    </li>
-            </li>
-        </ul>
-        </li></ul>
-    </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
 
-<br />
-<div class="clearfix"></div>
+                            <li><a href="https://mamipress.main.jp"><i class="fa-li fa fa-web"></i> mamipress</a></li>
+                            <li><a href="https://www.facebook.com/100009559792869"><i class="fa-li fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/samael500"><i class="fa-li fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://github.com/samael500"><i class="fa-li fa fa-github"></i> Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
 
-</div>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
 
-                        </div>
-
-                        <div class="col-md-4 content-right">
-
-    <div class="recent">
-        <h3>Content</h3>
-        <ul class="fa-ul">
-            <li><a href="http://mamix1116.github.io/pelican/categories.html"><i class="fa-li fa fa-tags"></i> Categories</a></li>
-            <li><a href="http://mamix1116.github.io/pelican/archives.html"><i class="fa-li fa fa-calendar"></i> Archives</a></li>
-            <li><a href="http://mamix1116.github.io/pelican/tags.html"><i class="fa-li fa fa-tag"></i> Tags</a></li>
-
-                <li><a href="http://mamix1116.github.io/pelican/feeds/djangogirls.atom.xml"><i class="fa-li fa fa-rss"></i> Feed</a></li>
-        </ul>
-    </div>
-
-        <div class="side-links">
-            <h3>Links</h3>
-            <ul class="fa-ul">
-                    <li><a href="http://getpelican.com/"><i class="fa-li fa fa-external-link"></i> Pelican</a></li>
-                    <li><a href="http://python.org/"><i class="fa-li fa fa-external-link"></i> Python.org</a></li>
-                    <li><a href="http://jinja.pocoo.org/"><i class="fa-li fa fa-external-link"></i> Jinja2</a></li>
-            </ul>
-        </div>
-
-        <div class="side-links">
-            <h3>Social links</h3>
-            <ul class="fa-ul">
-                    <li><a href="https://mamipress.main.jp"><i class="fa-li fa fa-web"></i> mamipress</a></li>
-                    <li><a href="https://www.facebook.com/100009559792869"><i class="fa-li fa fa-facebook"></i> Facebook</a></li>
-                    <li><a href="https://twitter.com/samael500"><i class="fa-li fa fa-twitter"></i> Twitter</a></li>
-                    <li><a href="https://github.com/samael500"><i class="fa-li fa fa-github"></i> Github</a></li>
-            </ul>
-        </div>
-
-
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <div class="clearfix"></div>
-                </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <p>This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.</p>
-            <p><a href="http://github.com/samael500/w3-personal-blog/">W3 Personal Blog</a> is a flat <a href="http://getbootstrap.com/">bootstrap</a> responsive theme designed by <a href="https://w3layouts.com/personal-blog-a-blogging-category-flat-bootstrap-responsive-web-template/">W3layouts</a> ported to a pelican by <a href="http://samael500.github.io/">Samael500</a>.<p>
-            <p>Copyrights © 2015 Mami Blog All rights reserved.</p>
-        </div>
-    </div>
-
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
 
 </body>
 </html>
