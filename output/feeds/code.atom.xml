@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mami Blog</title><link href="https://mamix1116.github.io/pelican/" rel="alternate"></link><link href="https://mamix1116.github.io/pelican/feeds/code.atom.xml" rel="self"></link><id>https://mamix1116.github.io/pelican/</id><updated>2015-12-22T12:00:00+09:00</updated><entry><title>Pelicanを使ってブログを作ったよ！</title><link href="https://mamix1116.github.io/pelican/pelicanwoshi-tsuteburoguwozuo-tsutayo.html" rel="alternate"></link><updated>2015-12-22T12:00:00+09:00</updated><author><name>Mami</name></author><id>tag:mamix1116.github.io,2015-12-22:pelican/pelicanwoshi-tsuteburoguwozuo-tsutayo.html</id><summary type="html">&lt;h2&gt;Django Girls のブログ作りたい。&lt;/h2&gt;
+&lt;p&gt;私もまだ勉強中なんだけど、もっと多くの女性とプログラミングを楽しみたくて、Django Girlsというコミュニティー運営をしています。&lt;br /&gt;
+コミュニティーから情報発信をしたいから、ブログがほしい。。でも、あんまりお金かけるのもなぁ～。&lt;br /&gt;
+と思っていたら、Python製のサイトジェネレーターがあることを教えてもらった。&lt;br /&gt;
+&lt;strong&gt;Pelican&lt;/strong&gt; &lt;br /&gt;
+あら、かわいい名前。&lt;/p&gt;
+&lt;p&gt;これでブログを作って、Github Pagesで公開しよう！
+せっかくだから、勉強会しよっかー  &lt;/p&gt;
+&lt;p&gt;ってことで、Django Girls Meetupを開催。&lt;br /&gt;
+個人用のブログとDjango Girls用のブログをつくってみました。&lt;/p&gt;
+&lt;h2&gt;Django Girls Japan Blogなんか上手くいかないんですけど。&lt;/h2&gt;
+&lt;p&gt;とっても残念なことに、なんか、ちょこちょこうまくいかなくて、Django Girls Japan Blogはまだ公開できてません。&lt;/p&gt;
+&lt;p&gt;テーマが悪かったのかなぁ。&lt;br /&gt;
+（アカウントのだとできるのに、プロジェクトのレボジトリだと上手くURLのリンクされない。）&lt;/p&gt;
+&lt;p&gt;ドメイン先に使えるようにしとくの忘れてた。。。&lt;/p&gt;
+&lt;p&gt;と、よくわからないことになったので、ぼちぼちやりマス。&lt;br /&gt;
+もうすぐ冬休みじゃない。
+冬休みの宿題がどんどん増えていく。&lt;/p&gt;
+&lt;h2&gt;自分用のブログはできたよ。&lt;/h2&gt;
+&lt;p&gt;とりあえず、自分用はできた！
+いろいろ失敗したり、実験して、何度もやり直してるうちに、
+ブログ立ち上げるだけなら５分くらいでできるようになったぞ。&lt;/p&gt;
+&lt;h2&gt;Pelican + Github Pages　でブログを公開するまで。&lt;/h2&gt;
+&lt;h3&gt;事前準備&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Github アカウントを作成する。&lt;/li&gt;
+&lt;li&gt;エディタを用意する。&lt;/li&gt;
+&lt;li&gt;Pythonをインストールする&lt;/li&gt;
+&lt;li&gt;Pip をインストールする&lt;/li&gt;
+&lt;li&gt;Git をインストールする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これは揃ってたから、インストール方法とかは割愛。&lt;/p&gt;
+&lt;h3&gt;&lt;/h3&gt;</summary><category term="Python"></category><category term="Pelican"></category></entry></feed>
