@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mami Blog</title><link href="https://mamix1116.github.io/pelican/" rel="alternate"></link><link href="https://mamix1116.github.io/pelican/feeds/all.atom.xml" rel="self"></link><id>https://mamix1116.github.io/pelican/</id><updated>2015-12-22T12:00:00+09:00</updated><entry><title>Pelicanを使ってブログを作ったよ！</title><link href="https://mamix1116.github.io/pelican/pelicanwoshi-tsuteburoguwozuo-tsutayo.html" rel="alternate"></link><updated>2015-12-22T12:00:00+09:00</updated><author><name>Mami</name></author><id>tag:mamix1116.github.io,2015-12-22:pelican/pelicanwoshi-tsuteburoguwozuo-tsutayo.html</id><summary type="html">&lt;h2&gt;Django Girls のブログ作りたい。&lt;/h2&gt;
+&lt;p&gt;私もまだ勉強中なんだけど、もっと多くの女性とプログラミングを楽しみたくて、Django Girlsというコミュニティー運営をしています。&lt;br /&gt;
+コミュニティーから情報発信をしたいから、ブログがほしい。。でも、あんまりお金かけるのもなぁ～。&lt;br /&gt;
+と思っていたら、Python製のサイトジェネレーターがあることを教えてもらった。&lt;br /&gt;
+&lt;strong&gt;Pelican&lt;/strong&gt; &lt;br /&gt;
+あら、かわいい名前。&lt;/p&gt;
+&lt;p&gt;これでブログを作って、Github Pagesで公開しよう！
+せっかくだから、勉強会しよっかー  &lt;/p&gt;
+&lt;p&gt;ってことで、Django Girls Meetupを開催。&lt;br /&gt;
+個人用のブログとDjango Girls用のブログをつくってみました。&lt;/p&gt;
+&lt;h2&gt;Django Girls Japan Blogなんか上手くいかないんですけど。&lt;/h2&gt;
+&lt;p&gt;とっても残念なことに、なんか、ちょこちょこうまくいかなくて、Django Girls Japan Blogはまだ公開できてません。&lt;/p&gt;
+&lt;p&gt;テーマが悪かったのかなぁ。&lt;br /&gt;
+（アカウントのだとできるのに、プロジェクトのレボジトリだと上手くURLのリンクされない。）&lt;/p&gt;
+&lt;p&gt;ドメイン先に使えるようにしとくの忘れてた。。。&lt;/p&gt;
+&lt;p&gt;と、よくわからないことになったので、ぼちぼちやりマス。&lt;br /&gt;
+もうすぐ冬休みじゃない。
+冬休みの宿題がどんどん増えていく。&lt;/p&gt;
+&lt;h2&gt;自分用のブログはできたよ。&lt;/h2&gt;
+&lt;p&gt;とりあえず、自分用はできた！
+いろいろ失敗したり、実験して、何度もやり直してるうちに、
+ブログ立ち上げるだけなら５分くらいでできるようになったぞ。&lt;/p&gt;
+&lt;h2&gt;Pelican + Github Pages　でブログを公開するまで。&lt;/h2&gt;
+&lt;h3&gt;事前準備&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Github アカウントを作成する。&lt;/li&gt;
+&lt;li&gt;エディタを用意する。&lt;/li&gt;
+&lt;li&gt;Pythonをインストールする&lt;/li&gt;
+&lt;li&gt;Pip をインストールする&lt;/li&gt;
+&lt;li&gt;Git をインストールする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これは揃ってたから、インストール方法とかは割愛。&lt;/p&gt;
+&lt;h3&gt;&lt;/h3&gt;</summary><category term="Python"></category><category term="Pelican"></category></entry><entry><title>Django Girls ワークショップはこうしてできた。</title><link href="https://mamix1116.github.io/pelican/Django-Girls-Koushite-dekita.html" rel="alternate"></link><updated>2015-12-20T12:00:00+09:00</updated><author><name>Mami</name></author><id>tag:mamix1116.github.io,2015-12-20:pelican/Django-Girls-Koushite-dekita.html</id><summary type="html">&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;これは&lt;a href="http://www.adventar.org/calendars/875"&gt;Geek Women Advent Calendar&lt;/a&gt; 20日目の記事です。&lt;br /&gt;
+（すみません。おくれました。）&lt;/p&gt;
+&lt;h2&gt;Django Girls って？&lt;/h2&gt;
+&lt;p&gt;女性にもっとプログラミングを楽しんでほしい。という想いで初心者向けの1Dyaワークショップを開催しています。
+ワークショップでは、小さいグループをつくり、プログラマとして活躍するコーチやメンターに教えてもらいながら、プログラミングの基礎を学んでいきます。HTML、CSS、Python、そしてDjangoを学んで、はじめてのWebアプリケーションを一緒に作ります。このワークショップは、2014年にベルリンで開催以来、世界各都市で開催されています。
+Django Girls Japanは、そのワークショップを中心とした国内のコミュニティーです。&lt;/p&gt;
+&lt;p&gt;その日本初のDjango Girlsワークショップがどうやってできたのか、書いておきたいと思います。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Django Girls ワークショップ" src="https://mamix1116.github.io/pelican/img/pic04_s.JPG" /&gt;&lt;/p&gt;
+&lt;h2&gt;やることになった経緯&lt;/h2&gt;
+&lt;p&gt;私は、都市計画やGIS（Geographic Information Science/System）をやっていて、
+エンジニアじゃないけど、ちょいちょいプログラミングを一人でかじってみてた。&lt;/p&gt;
+&lt;p&gt;2014年頃。GISやるならPythonでしょ、って流れに乗っかって、Pythonをかじりはじめる。&lt;/p&gt;
+&lt;p&gt;2015年4月。Python勉強したら、GIS以外でも使えるんでしょ？フレームワーク？Django？なにそれ？
+チュートリアルとかないんかなー？日本語で私にも分かるようなの、あんまりないなー。
+英語で、いいかんじの発見！&lt;/p&gt;
+&lt;p&gt;ん、このチュートリアルを使ってワークショップやってるみたいだぞ。
+たのしそー！！日本でもやりたーい！！&lt;/p&gt;
+&lt;p&gt;という流れでした。&lt;/p&gt;
+&lt;h2&gt;仲間集め&lt;/h2&gt;
+&lt;p&gt;Django Girlsが実現できたのは、なんといってもホントにいろんな人の協力のおかげです。&lt;/p&gt;
+&lt;p&gt;やりたーい！！ッて言ってみたら、いいね！って言ってくれる人たちがいて、
+いろんな人が集まってくれました。いろんな人を紹介してもらいました。&lt;/p&gt;
+&lt;p&gt;"だ、大丈夫？！"と、いろんな方が心配してくれて、手を貸してくれました。&lt;/p&gt;
+&lt;p&gt;こうして、運営メンバーと、ワークショップ当日のコーチ＆メンターはじめ、
+たくさんの仲間や協力者と出会うことができました。皆さんには感謝しかないです。&lt;/p&gt;
+&lt;p&gt;やりたいことは、とりあえずやりたいって言ってみること大事だと思いました。
+それに賛同してくれる人がいたら、その声を聞きながらできることやっていく。
+すると、独りよがりな「やりたい」にはならなくて、最初は私の「やりたい」だけだったけど、みんなで共有する目標になっていく。&lt;/p&gt;
+&lt;p&gt;それと、Pythonコミュニティーのすごい。
+おそらくPythonに限らないことだろうけど、コミュニティーの結束や協力がすごい。
+（いつも日程が合わなくて、Pythonの勉強会とかに行けてないのがつらい。行きたい、行きたい。）&lt;/p&gt;
+&lt;h2&gt;チュートリアルを翻訳&lt;/h2&gt;
+&lt;p&gt;まず、チュートリアルを翻訳しました。
+翻訳できた！と思ったら、翻訳元がアップデートされ後戻りするとか、慣れない作業に苦戦。
+翻訳作業のツールやコツがあるみたいで、次回はそれを導入してもっと効率的にやろう。&lt;/p&gt;
+&lt;p&gt;翻訳は複数人で作業して、Githubをつかって管理してました。
+個人的には、Githubのいい練習になった。
+みんなでGithubやる時のお作法みたいなのが、ちょっと分かってきた。&lt;/p&gt;
+&lt;p&gt;翻訳作業は、waffle.ioを使って、Githubのイシューに紐付けてチャプターごとにタスク管理。
+Trello風だし、誰が何をしているか、何が終わったか、一目瞭然。わかりやすかった。
+翻訳したいチャプターを自分で選んで、作業すると宣言。終わったら報告して、また次のチャプターをえらぶ。
+自己申告制だから、みんな無理ない範囲でそれぞれのペースで協力できるのもよかったかな。&lt;/p&gt;
+&lt;h2&gt;イベント準備&lt;/h2&gt;
+&lt;p&gt;まずは、会場と日程調整。
+快く会場提供を申し出てくれた方々に恵まれ、本当に助かりました。
+本当にありがとうございました。&lt;/p&gt;
+&lt;p&gt;会場のデコレーションはしたい！風船かざりたい！ワクワクする会場作り。&lt;/p&gt;
+&lt;h2&gt;スポンサー集め＆告知&lt;/h2&gt;
+&lt;p&gt;一般社団法人PyConさんの力を借りて、
+ConnpassでPaypal決済でスポンサー集めをしました。
+個人の方でスポンサーしてくださる方もいて、びっくりしました。
+応援してくれる方がいるんだなって、すごく嬉しかった。&lt;/p&gt;
+&lt;p&gt;告知もPyLadiesさんの協力を得てConnpassで実施。
+けっこうすぐ埋まりました。需要あってよかった。ホッとした瞬間。&lt;/p&gt;
+&lt;h2&gt;ワークショップ当日&lt;/h2&gt;
+&lt;p&gt;参加者は30名。コーチ＆メンターが13名。２～３人に1名のサポートがついて、チュートリアルにそって手を動かしながら、プログラミングを学んでみる。
+海外出身者や、関西など地方からも参加してくれました。20～30代が多かったけど、40代、50代の方も。IT業界の方も、そうでない方も。&lt;/p&gt;
+&lt;p&gt;事前アンケートで確認しておいたプログラミングの経験レベルと、OS（Windows/Mac）から、あらかじめグループを作っておいて、
+できるだけ同じOSを使っているコーチをあてるようにしました。&lt;/p&gt;
+&lt;p&gt;ランチは、ヘルシー思考の女の子やベジタリアンの子にも楽しんで欲しくて、マクロビのランチをオーダー。
+おいしくて、ボリュームもしっかりあるから、参加者だけでなくコーチ男性陣にも満足してもらえたようです。&lt;/p&gt;
+&lt;p&gt;スイーツタイムもありました。休憩だけでなく、参加者同士がコミュニケーションをとる時間として、お菓子やお茶はやっぱり効果的です。
+「これ（お茶）、どうぞ～」「美味しいですね～」なんて自然な会話が、声をかけるきっかけになります。
+女性がスイーツタイムに求めるのは、お菓子そのものというより、自然なコミュニケーションなんだと思う。
+出会いや会話も、ワークショップに参加する醍醐味。&lt;/p&gt;
+&lt;h2&gt;ワークショップ後&lt;/h2&gt;
+&lt;p&gt;スポンサーやコーチ＆メンターなど、お世話になった方に、翌日お礼メールとともにレポートを送付した。&lt;/p&gt;
+&lt;p&gt;素早くレポートをおこせるよう、当日のアンケート集計結果と、写真、最終的な決算を書き込めばいいように、事前に作っておいた。
+事前にレポートの枠を作っておくと、絶対に撮り忘れたらいけない写真もわかる。忘れないうちに。&lt;/p&gt;
+&lt;h2&gt;今後について&lt;/h2&gt;
+&lt;p&gt;ワークショップはそれなりに労力もかかるので、頻繁にというわけにはいかないのが、現在の実状。
+その中でも、無理ない範囲で継続的にコミュニティーとして活動をする必要があると思っている
+１～2ヶ月に1度、Meetupや小さな勉強会は開いている。
+その中で、女性やなにかしらマイノリティの立場に置かれている人たちが、参加しやすいイベントのあり方を
+毎回トライアンドエラーで試しているところです。&lt;/p&gt;
+&lt;p&gt;そして、&lt;strong&gt;2016年は春すぎくらいに、第2回目のDjango Girlsワークショップ開催を目指しています。&lt;/strong&gt;
+（興味ある方は、&lt;a href="http://djangogirls-org.connpass.com/"&gt;こちら&lt;/a&gt;をチェックしておいてくださいね。）&lt;/p&gt;</summary><category term="Django Girls"></category></entry></feed>
